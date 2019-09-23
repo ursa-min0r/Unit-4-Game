@@ -1,0 +1,35 @@
+
+* {
+    font-family: 'Crimson Pro', serif;
+    box-sizing: border-box;
+    text-align: center;
+
+  }
+
+ #header, header {
+
+    background-color: purple;
+    color: white;
+
+  }
+
+  body {
+
+    background-image: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif");
+  }
+
+  #rules, #crystals, #body3, #gamePlay {
+    background-color: black;
+    color: white;
+    max-width: 960px;
+    margin: auto;
+    float: center;
+    line-height: 20px;
+  }
+  
+  @media only screen and (max-width: 980px) {
+    .body1 {
+      width: 400px;
+    }
+  
+  }
