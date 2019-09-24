@@ -18,15 +18,40 @@
     background-image: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif");
   }
 
-  #rules, #crystals, #body3, #gamePlay {
+  #rules, #crystals, #body3, #gamePlay, .card3, .card4, .card1 {
     background-color: black;
     color: white;
     max-width: 960px;
     margin: auto;
-    float: center;
     line-height: 20px;
   }
+
+  .card1 {
+    float: center;
+    max-width: 960px;
+    margin: auto;
+    line-height: 20px;
+    
+  }
+
+.card3 {
+    float: center;
+    max-width: 960px;
+    margin: auto;
+    line-height: 20px;
+    
+  }
+
+  .card4 {
+float: center;
+max-width: 960px;
+margin: auto;
+line-height: 20px;
+
+  }
   
+  
+
   @media only screen and (max-width: 980px) {
     .body1 {
       width: 400px;

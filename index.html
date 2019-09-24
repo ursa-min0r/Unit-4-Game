@@ -16,69 +16,83 @@
 
     <div id="header">
 
-<h1>Crystal Collector</h1>
+        <h1>Crystal Collector</h1>
 
     </div>
 
     <div id="body">
-
-    <section id="rules">
-
-
-        <p id="crystal1P"></p>
-        <p id="crystal2P"></p>
-        <p id="crystal3P"></p>
-        <p id="crystal4P"></p>
-        <p id="playGuess"></p>
-        <p id="playTotal"></p>
-        <p id="playWins"></p>
-        <p id="playLosses"></p>
-        <p id="randomNumber"></p>
         <br>
-        <p>
-            Choose a Crystal from the options below, but choose wisely!
-        </p>
-        <br>
-        <p>
-            Each Crystal has a designated numeric value, and your selections must add up to the random number
-            chosen
-            for you.
-        </p>
-        <br>
-        <p>
-            If your total exceeds the chosen number, you loose.
-        </p>
-    </section>
-</div>
-
-    <br>
-
-    <div id="body2">
-        <section id="crystals">
-
-            <img id ="crystal1" src="Assets/Images/crystal.png" alt="crystal1" width="100" height="100">
-            <img id ="crystal2" src="Assets/Images/crystal2.png" alt="crystal2" width="100" height="100">
-            <img id ="crystal3" src="Assets/Images/crystal3.png" alt="crystal3" width="100" height="100">
-            <img id ="crystal4" src="Assets/Images/crystal4.png" alt="crystal4" width="100" height="100">
-
-        </section>
-    </div>
-
-    <div id="body3">
-
-        <section id="gamePlay">
-                <h1>Magic Number: <span id="magicNumber"></span></h1>
+        <div class="body2">
+            <div class="column1">
+                <div class="card1">
+                    <section id="rules">
 
 
+                        <p id="crystal1P"></p>
+                        <p id="crystal2P"></p>
+                        <p id="crystal3P"></p>
+                        <p id="crystal4P"></p>
+                        <p id="playGuess"></p>
+                        <p id="playTotal"></p>
+                        <p id="playWins"></p>
+                        <p id="playLosses"></p>
+                        <p id="randomNumber"></p>
+                        <br>
+                        <p>
+                            Choose a Crystal from the options below, but choose wisely!
+                        </p>
+                        <br>
+                        <p>
+                            Each Crystal has a designated numeric value, and your selections must add up to the random
+                            number
+                            chosen
+                            for you.
+                        </p>
+                        <br>
+                        <p>
+                            If your total exceeds the chosen number, you loose.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="column2">
+                <div class="card2">
+                    <section id="gamePlay">
+                        <h1>Magic Number: <span id="magicNumber"></span></h1>
 
-        </section>
 
-    </div>
 
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+                    </section>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="column3">
+                <div class="card3">
+                    <section id="crystals">
+
+                        <img id="crystal1" src="Assets/Images/crystal.png" alt="crystal1" width="100" height="100">
+                        <img id="crystal2" src="Assets/Images/crystal2.png" alt="crystal2" width="100" height="100">
+                        <img id="crystal3" src="Assets/Images/crystal3.png" alt="crystal3" width="100" height="100">
+                        <img id="crystal4" src="Assets/Images/crystal4.png" alt="crystal4" width="100" height="100">
+
+                    </section>
+                </div>
+                <br>
+                <br>
+                <div class="column4">
+                    <div class="card4">
+                        <section id="totals">
+                        <h1>Your Total: <span id="yourTotal"></span></h1>
+                    </section>
+                </div>
+                </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>
 
 </html>
