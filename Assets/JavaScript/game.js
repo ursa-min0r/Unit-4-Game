@@ -16,19 +16,24 @@ var magicNumCount = magicNumArray[Math.floor(Math.random() * magicNumArray.lengt
 
 var playerScore = 0;
 
-var playerScoreTotal = magicNumCount;
+var wins = 0;
+
+var losses = 0;
+
 
 
 //Functions//
 
 $("#magicNumber").text(magicNumCount);
-$("#crystal1").attr("data-value", crystalCounter1 );
+$("#crystal1").attr("data-value", crystalCounter1);
 $("#crystal2").attr("data-value", crystalCounter2);
 $("#crystal3").attr("data-value", crystalCounter3);
 $("#crystal4").attr("data-value", crystalCounter4);
 
 
 $("#yourTotal").text(playerScore);
+$("#crystalWins").text(wins);
+$("#crystalLosses").text(losses);
 
 
 
@@ -39,18 +44,13 @@ $("#crystal1").on("click", function() {
     playerScore += parseInt(score);
 
     $("#yourTotal").text(playerScore);
-
-
-    console.log(score, playerScore);
     
+    console.log(score, playerScore);
 });
 
-// if else player score == magicNumCount
-// win, losses
 
 $("#crystal2").on("click", function() {
 
-    
     var score = $(this).attr("data-value");
     
     playerScore += parseInt(score);
@@ -70,10 +70,7 @@ $("#crystal3").on("click", function() {
 
     $("#yourTotal").text(playerScore);
 
-
     console.log(score, playerScore);
-
-
 });
 
 
@@ -86,13 +83,25 @@ $("#crystal4").on("click", function() {
 
     $("#yourTotal").text(playerScore);
 
-
     console.log(score, playerScore);
-    
-
 });
 
 
+if (playerScore === magicNumCount) {
+        
+        wins++;
+        
+        playerScore = 0;
+    }
+ else if (magicNumCount < playerScore) {
+
+        losses++;
+
+        playerScore = 0;
+
+        
+};
+    
 
 
 
